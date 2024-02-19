@@ -9,7 +9,7 @@ else
     tar -zxvf code.tar.gz
     rm code.tar.gz
     echo "code 디렉토리에 압축을 풀었습니다."
-    cd ..
+    cd ../level2-cv-semanticsegmentation-cv-07
 fi
 
 # data
