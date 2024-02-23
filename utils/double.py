@@ -3,7 +3,7 @@ import cv2
 from PIL import Image
 from shutil import copytree
 
-dir_path = "./train/DCM"  # 바꾸려는 디렉토리 경로를 지정합니다.
+dir_path = "../data/train/DCM"  # 바꾸려는 디렉토리 경로를 지정합니다.
 
 for dir_name in os.listdir(dir_path):
     if dir_name.startswith("ID0"):
