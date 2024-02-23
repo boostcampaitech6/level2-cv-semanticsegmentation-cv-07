@@ -1,7 +1,7 @@
 import os
 
 # 변경하려는 디렉토리 경로를 지정합니다.
-dir_path = "./test/DCM"
+dir_path = "../data/test/DCM"
 
 # 디렉토리 내의 모든 하위 디렉토리를 순회합니다.
 for dir_name in os.listdir(dir_path):
