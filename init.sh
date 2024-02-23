@@ -1,23 +1,21 @@
 # code 다운로드
-if [ -d "../code" ] ; then
+if [ -d "code" ] ; then
     echo "code 디렉토리가 이미 있습니다."
 else
-    cd ..
     mkdir code
     cd code
     wget https://aistages-api-public-prod.s3.amazonaws.com/app/Competitions/000269/data/code.tar.gz
     tar -zxvf code.tar.gz
     rm code.tar.gz
     echo "code 디렉토리에 압축을 풀었습니다."
-    cd ../level2-cv-semanticsegmentation-cv-07
+    cd ..
 fi
 
 # data
-if [ -d "../data" ] ; then
+if [ -d "data" ] ; then
     echo "data 디렉토리가 이미 있습니다."
-elif [ -e "../data.tar.gz" ]; then
+elif [ -e "data.tar.gz" ]; then
     # data 디렉토리 생성
-    cd ..
     mkdir data
     cd data
     # data.tar.gz 압축 해제
@@ -43,5 +41,4 @@ echo -e "\e[34mFin pre-commit\e[0m"
 # install requirements
 pip install -r ../code/requirements.txt
 echo -e "\e[34mFin install requirements\e[0m"
-
 echo -e "\e[34mFin init\e[0m"
