@@ -3,8 +3,8 @@ import json
 import shutil
 
 # 원본 디렉토리 경로와 복사할 디렉토리 경로를 설정합니다.
-src_dir = "./train/outputs_json"
-dst_dir = "./train/outputs_json"
+src_dir = "../data/train/outputs_json"
+dst_dir = "../data/train/outputs_json"
 
 # 원본 디렉토리 안의 각 디렉토리를 순회합니다.
 for dir_name in os.listdir(src_dir):
