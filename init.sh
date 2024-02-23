@@ -41,5 +41,4 @@ echo -e "\e[34mFin pre-commit\e[0m"
 # install requirements
 pip install -r ../code/requirements.txt
 echo -e "\e[34mFin install requirements\e[0m"
-
 echo -e "\e[34mFin init\e[0m"
